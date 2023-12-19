@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Net;
+using TechTest.Repository.Data.AddressBook;
+using TechTest.Shared.Models.AddressBook;
 
 namespace TechTest.API
 {
@@ -14,28 +15,72 @@ namespace TechTest.API
             app.MapDelete("/AddressBook", DeleteAddress);
         }
 
-        private static async Task<IResult> GetAllAddresses()
+        private static async Task<IResult> GetAllAddresses(IAddressBookRepository addressBookRepository)
         {
-            return null;
+            try
+            {
+                return Results.Ok(await addressBookRepository.GetAllAddresses());
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem(ex.Message);
+            }
         }
 
-        private static async Task<IResult> GetAddress()
+        private static async Task<IResult> GetAddress(IAddressBookRepository addressBookRepository, [FromBody] Address address)
         {
-            return null;
+            try
+            {
+                var results = await addressBookRepository.GetAddress(address.Id);
+                if (results == null)
+                {
+                    return Results.NotFound();
+                }
+
+                return Results.Ok(results);
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem(ex.Message);
+            }
         }
 
-        private static async Task<IResult> AddAddress()
+        private static async Task<IResult> AddAddress(IAddressBookRepository addressBookRepository, [FromBody] Address address)
         {
-            return null;
+            try
+            {
+                await addressBookRepository.AddAddress(address);
+                return Results.Ok();
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem(ex.Message);
+            }
         }
 
-        private static async Task<IResult> UpdateAddress()
+        private static async Task<IResult> UpdateAddress(IAddressBookRepository addressBookRepository, [FromBody] Address address)
         {
-            return null;
+            try
+            {
+                await addressBookRepository.UpdateAddress(address);
+                return Results.Ok();
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem(ex.Message);
+            }
         }
-        private static async Task<IResult> DeleteAddress()
+        private static async Task<IResult> DeleteAddress(IAddressBookRepository addressBookRepository, [FromBody] Address address)
         {
-            return null;
+            try
+            {
+                await addressBookRepository.DeleteAddress(address);
+                return Results.Ok();
+            }
+            catch (Exception ex)
+            {
+                return Results.Problem(ex.Message);
+            }
         }
     }
 }

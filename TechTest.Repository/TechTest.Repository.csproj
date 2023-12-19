@@ -10,4 +10,10 @@
     <ProjectReference Include="..\TechTest.Shared\TechTest.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Data\Json\AddressBook.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
