@@ -1,5 +1,4 @@
-﻿
-namespace TechTest.Shared.Interface
+﻿namespace TechTest.Shared.Interface
 {
     public interface IReader
     {
