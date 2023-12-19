@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1m0jj9tWY7IDacmep4iRAbGah/y9grXxBT9McMNjkVhxtzvBLwnCpyK+eri1EubY54YxRHb9m7YmDfovXU76Vg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Shared\\TechTest.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shane\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
