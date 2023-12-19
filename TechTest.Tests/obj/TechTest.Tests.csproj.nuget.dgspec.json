@@ -4,14 +4,78 @@
     "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Tests\\TechTest.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Tests\\TechTest.Tests.csproj": {
+    "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Repository\\TechTest.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Tests\\TechTest.Tests.csproj",
-        "projectName": "TechTest.Tests",
-        "projectPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Tests\\TechTest.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Repository\\TechTest.Repository.csproj",
+        "projectName": "TechTest.Repository",
+        "projectPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Repository\\TechTest.Repository.csproj",
         "packagesPath": "C:\\Users\\shane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Tests\\obj\\",
+        "outputPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\shane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Shared\\TechTest.Shared.csproj": {
+                "projectPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Shared\\TechTest.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Shared\\TechTest.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Shared\\TechTest.Shared.csproj",
+        "projectName": "TechTest.Shared",
+        "projectPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Shared\\TechTest.Shared.csproj",
+        "packagesPath": "C:\\Users\\shane\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,9 +109,86 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Tests\\TechTest.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Tests\\TechTest.Tests.csproj",
+        "projectName": "TechTest.Tests",
+        "projectPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Tests\\TechTest.Tests.csproj",
+        "packagesPath": "C:\\Users\\shane\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\shane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Repository\\TechTest.Repository.csproj": {
+                "projectPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Repository\\TechTest.Repository.csproj"
+              },
+              "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Shared\\TechTest.Shared.csproj": {
+                "projectPath": "C:\\Users\\shane\\source\\repos\\TechTest\\TechTest.Shared\\TechTest.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.7.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "NUnit": {
               "target": "Package",
